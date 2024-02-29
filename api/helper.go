@@ -31,7 +31,7 @@ func (app *Config) validateBody(ctx *gin.Context, data any) error {
 
 // reciever func to WriteJson
 func (app *Config) writeJSON(ctx *gin.Context, status int, data any) {
-	ctx.JSON(status, jsonResponse{Status: status, Message: "Succes", Data: data})
+	ctx.JSON(status, jsonResponse{Status: status, Message: "Success", Data: data})
 }
 
 // reciever func
